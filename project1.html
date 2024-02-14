@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        LOGIN PAGE
+    </title>
+    <link rel="icon" href="images/icon.png">
+    <style>
+        html {
+            height: 100%;
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: linear-gradient(#bdc22c, hwb(212 15% 17%));
+        }
+
+        .login-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 29%;
+            padding: 4%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, .5);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+            border-radius: 10px;
+        }
+
+
+        .login-box h2 {
+            margin: 0 0 10%;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+
+
+
+        .login-box .user-box {
+            position: relative;
+        }
+
+
+
+        .login-box .user-box input {
+            width: 100%;
+            padding: 2% 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 10%;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+
+        .login-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 3% 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: .3s;
+        }
+
+
+        .login-box .user-box input:focus~label,
+        /*  uper user name*/
+        .login-box .user-box input:valid~label {
+            top: -20px;
+            left: 0%;
+            color: #03e9f4;
+            font-size: 12px;
+        }
+
+
+
+        .login-box form b {
+            position: relative;
+            display: inline-block;
+            padding: 3% 4%;
+            color: #03e9f4;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: .5s;
+            margin-top: 20%;
+            letter-spacing: 4px;
+        }
+
+
+        .login-box b:hover {
+            background: #03e9f4;
+            color: #fff;
+            border-radius: 5%;
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+
+        }
+
+
+        .login-box p span {
+            position: absolute;
+            display: block;
+        }
+
+
+        .button {
+            background: linear-gradient(#bdc22c, hwb(212 15% 17%));
+            color: hwb(213 92% 5%);
+            cursor: pointer;
+            border-radius: 20px;
+            border: 0px solid white;
+            font-size: 23px;
+
+        }
+
+
+        @media only screen and (max-width:1140px) {
+            label {
+
+                flex-direction: column;
+            }
+
+            .user-box {
+                flex-direction: column;
+            }
+
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="login-box">
+
+
+
+
+        <h2>Login</h2>
+        <form>
+            <div class="user-box">
+
+                <input type="text" name="userid" id="text3" required>
+                <label>Username</label>
+            </div>
+
+            <div class="user-box">
+                <input type="password" name="password" id="text1" required>
+                <label>Password</label>
+            </div>
+
+            <b>
+
+                <input type="button" class="button" onclick="javascript:validate()" value="SUBMIT">
+
+            </b>
+
+        </form>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        function validate() {
+            if (document.getElementById("text3").value == "smriti"
+                && document.getElementById("text1").value == "smriti123") {
+                alert("Enter ID PASSWORD CORRCET");
+                alert("SUCCEED FULL LOGIN ");
+                location.href = "home.html";
+
+            }
+
+
+            else {
+
+                alert("SORRY YOU CAN'T LOGIN");
+                alert("PLEASE TRY AGAIN");
+            }
+
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</head>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: rgb(208, 221, 133);
+            /* box-shadow: offset-x offset-y color;*/
+            /* box-shadow: offset-x offset-y blur radius;*/
+            /* box-shadow: offset-x offset-y blur radius spread radius color;*/
+
+
+            /* border: 2px solid red;
+
+
+           box-shadow: 10px 13px rgb(207, 122, 160);
+           box-shadow: -10px -13px rgb(207, 122, 160);
+           box-shadow: 7px 5px 10px rgb(207, 122, 160);
+           box-shadow: 7px 5px 10px rgb(207, 122, 160);
+           box-shadow: -7px -5px 15px rgb(207, 122, 160);
+
+
+           box-shadow: -7px -5px 15px 20px rgba(16, 184, 69, 0.4);
+
+           box-shadow: inset 3px 5px pink;*/
+
+            box-shadow: 3px 5px green, 4px 6px red;
+        }
+
+        .card h2 {
+            /* text-shadow: 3px 4px white;*/
+            /*text-shadow: 3px 4px 2px white;*/
+            text-shadow: -3px -4px 2px white;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2> This is C++ course</h2>
+            <p> I have started C++ course which does not mean we will stop this course. We will continue this course
+                till complition. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, incidunt. Animi
+                laborum repellendus
+                corporis nesciunt fugit placeat deleniti vel voluptatum est nisi, voluptates mollitia necessitatibus
+                quo, alias vitae voluptate optio. Fuga consequatur provident illo!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, voluptatem fuga natus quod ratione
+                vitae at iusto eos mollitia neque dolor enim alias. At autem architecto laudantium rerum, facilis atque
+                doloribus nesciunt amet tempore.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam perferendis exercitationem et veniam
+                corporis alias eius necessitatibus at eaque. Minus nulla, doloribus ratione debitis, numquam iste autem
+                neque nemo labore, perspiciatis provident quae blanditiis.</p>
+        </div>
+    </div>
+</body>
+
+</html>
